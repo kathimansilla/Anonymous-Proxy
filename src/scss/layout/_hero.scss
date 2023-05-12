@@ -4,3 +4,35 @@
     background-position: center;
     height: 100vh;
 }
+.columnaCentral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .hero__title {
+        color: $colorText1;
+        font-family: $fontPpal;
+        text-transform: uppercase;
+        font-size: 2.625rem;
+        text-align: center;
+        margin-top: 284px;
+        line-height: 1.31;
+    }
+    & .hero__text {
+        color: $colorText1;
+        font-family: $fontSec;
+        font-weight: normal;
+        font-size: 1rem;
+        margin-top: 10px;
+        margin-bottom: 45px;
+    }
+    & .hero__ball {
+        height: 45px;
+        width: 45px;
+        background-color: $colorText1;
+        border-radius: 50%;
+        & .hero__arrow {
+            margin: 18px 12px 15.3px 13px;
+        }
+    }
+}
