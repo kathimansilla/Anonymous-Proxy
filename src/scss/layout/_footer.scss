@@ -1,0 +1,39 @@
+.footer {
+    background-color: #304268;
+    padding-bottom: 45px;
+}
+.columnaCentral {
+    & .footer__ball {
+            height: 45px;
+            width: 45px;
+            background-color: $colorText1;
+            border-radius: 50%;
+            transform: translateY(-20px);
+            & .footer__arrow {
+                margin: 11px 12.4px 10px 12px;
+            }
+        }
+    & .footer__content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        &--menu {
+           font-family: $fontSec; 
+           font-size: 1rem;
+           color: $colorText1;
+           text-transform: uppercase;
+           text-align: center;
+           line-height: 1.88;
+        }
+    & .footer__content--text {
+        font-family: $fontSec;
+        color: $colorText1;
+        font-size: 0.875rem;
+        text-align: center;
+        line-height: 2.14;
+        & .heart {
+            color: $colorButton_Heart;
+        }
+    }
+    }
+}
