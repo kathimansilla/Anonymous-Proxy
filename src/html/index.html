@@ -8,81 +8,14 @@
   </head>
 
   <body>
-    <header class="header"><img src="./assets/images/ico-menu.svg" alt="icono menu" /></header>
+    <include src="./partials/header.html"></include>
 
     <main>
-      <section class="hero">
-        <h1 class="hero__title">Anonymous Proxy</h1>
-        <p class="hero__text">In hac habitasse platea dictumst.</p>
-        <img
-          class="hero__arrow"
-          src="./assets/images/ico-scroll-down.svg"
-          alt="Flecha para ir a 3 Reasons To Purchase"
-        />
-      </section>
-
-      <section class="section1">
-        <article class="section1__post">
-          <p class="section1__post--littleText">Insomnia Tips</p>
-          <h2 class="section1__post--title">Looking Through A Window</h2>
-          <p class="section1__post--text">
-            Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at luctus ex diam
-            nec lectus. Vivamus semper sodales rutrum.
-          </p>
-        </article>
-        <div class="section1__button"><p>Go</p></div>
-      </section>
-
-      <section class="section2">
-        <h2 class="section2__title">3 Reasons To Purchase</h2>
-        <div class="section2__articles">
-          <article class="postSection2">
-            <h3 class="postSection2__title">Ut sed metus</h3>
-            <p class="postSection2__text">Lorem ipsum dolor sit amet, consecteur.</p>
-          </article>
-          <article class="postSection2">
-            <h3 class="postSection2__title">Curabitur ac erat</h3>
-            <p class="postSection2__text">Mauris mattis urna quis lorem molestie.</p>
-          </article>
-          <article class="postSection2">
-            <h3 class="postSection2__title">Morbi dictum</h3>
-            <p class="postSection2__text">Aliquam in dolor et dolor tincidunt.</p>
-          </article>
-        </div>
-        <div class="section2__button">
-          <p>More reasons</p>
-        </div>
-      </section>
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/section1.html"></include>
+      <include src="./partials/section2.html"></include>
     </main>
 
-    <footer class="footer">
-      <img
-        class="footer__arrow"
-        src="./assets/images/ico-arrow.svg"
-        alt="Flecha para volver a inicio"
-      />
-      <div class="footer__content">
-        <nav class="footer__content--menu">
-          <ul>
-            <li>Articles</li>
-            <li>Books</li>
-            <li>Events</li>
-            <li>Reasons</li>
-            <li>Tips</li>
-          </ul>
-        </nav>
-        <nav class="footer__content--menu">
-          <ul>
-            <li>Twitter</li>
-            <li>Instagram</li>
-            <li>Mastodon.social</li>
-          </ul>
-        </nav>
-        <div class="footer__content--text">
-          <p>©2017</p>
-          <p>we ❤︎ components</p>
-        </div>
-      </div>
-    </footer>
+    <include src="./partials/footer.html"></include>
   </body>
 </html>
