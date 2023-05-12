@@ -1,0 +1,24 @@
+.section2 {
+    background-color: #eff9ff;
+    padding: 30px 0 60px;
+    text-align: center;
+    &__title {
+        font-family: $fontPpal;
+        font-size: 1.625rem;
+        font-weight: 800;
+        line-height: 1.73;
+    }
+    &__articles {
+        display: inline-grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 45px;
+    }
+
+        @media screen and (min-width: 768px) {
+            &__articles {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 1fr;
+                grid-gap: 26.2px;
+            }
+        }
+}
