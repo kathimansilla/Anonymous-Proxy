@@ -1,0 +1,13 @@
+.columna central {
+    margin: 0 15px;
+
+    /*tablet*/
+    @media screen and (min-width: 768px) {
+        margin: 0 39px;
+    }
+
+    /*desktop*/
+    @media screen and (min-width: 1280px) {
+        margin: 0 275px;
+    }
+}
