@@ -35,11 +35,24 @@
         display: flex;
         margin: 30px 0 45px;
         & .text {
-            margin: auto;
-            font-family: $fontSec;
-            font-size: 1.25rem;
-            font-weight: 500;
-            color: $colorButton_Heart;
+            text-decoration: none;
+            height: 100%;
+            width: 100%;
+            border-radius: 22.5px;
+            display: flex;
+            & .textButton {
+                display: inline;
+                margin: auto;
+                font-family: $fontSec;
+                font-size: 1.25rem;
+                font-weight: 500;
+                color: $colorButton_Heart;
+            }
+        }
+        & .text:hover {
+            & .textButton {
+                color: #304268;
+            }
         }
     }
 }
