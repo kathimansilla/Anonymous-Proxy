@@ -36,12 +36,20 @@
         margin: 45px auto;
         display: grid;
         & .text2 {
+            text-decoration: none;
+        }
+        & .textButton2 {
             margin: auto;
             font-family: $fontSec;
             font-size: 1.25rem;
             font-weight: 500;
             color: $colorText1;
             line-height: 2.25;
+        }
+        & .text2:hover {
+            & .textButton2 {
+                color: #304268;
+            }
         }
     }
         @media screen and (min-width: 768px) {
