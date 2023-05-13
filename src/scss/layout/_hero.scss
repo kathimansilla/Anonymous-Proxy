@@ -5,30 +5,33 @@
     height: 100vh;
     display: flex;
     align-items: flex-end;
+    justify-content: center;
 }
 .columnaCentral {
     display: flex;
     flex-flow: column;
     height: 50%;
-    width: 100%;
     align-items: center;
 
     & .hero__title {
         color: $colorText1;
         font-family: $fontPpal;
         text-transform: uppercase;
+        /*usé una calculadora de px to vw para intentar hacer el texto responsive*/
         font-size: 13.125vw;
         width: min-content;
+        max-width: 690px;
         text-align: center;
         line-height: 1.31;
         /*TABLET*/
         @media screen and (min-width: 768px) {
             font-size: 10.417vw;
-            max-width: 690px;
         }
         /*DESKTOP*/
-        @media screen and (min-width: 1280px) {
+        /*Puse min-width: 950px para que no desborde el texto su contenedor. La pantalla Desktop es de 1280px*/
+        @media screen and (min-width: 950px) {
             font-size: 100px;
+            max-width: 730px;
         }
     }
     & .hero__text {
