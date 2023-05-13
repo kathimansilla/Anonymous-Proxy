@@ -20,10 +20,13 @@
         &--menu {
            font-family: $fontSec; 
            font-size: 1rem;
-           color: $colorText1;
            text-transform: uppercase;
            text-align: center;
            line-height: 1.88;
+           & .tag__footer {
+            color: $colorText1;
+            text-decoration: none;
+           }
         }
     & .footer__content--text {
         font-family: $fontSec;
