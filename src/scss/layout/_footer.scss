@@ -9,6 +9,9 @@
             background-color: $colorText1;
             border-radius: 50%;
             transform: translateY(-20px);
+            & .footerArrowTag {
+                display: block;
+            }
             & .footer__arrow {
                 margin: 11px 12.4px 10px 12px;
             }
