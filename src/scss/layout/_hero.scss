@@ -3,28 +3,41 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
+    display: flex;
+    align-items: flex-end;
 }
 .columnaCentral {
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
+    height: 50%;
+    width: 100%;
     align-items: center;
 
     & .hero__title {
         color: $colorText1;
         font-family: $fontPpal;
         text-transform: uppercase;
-        font-size: 2.625rem;
+        font-size: 13.125vw;
+        width: min-content;
         text-align: center;
-        margin-top: 284px;
         line-height: 1.31;
+        /*TABLET*/
+        @media screen and (min-width: 768px) {
+            font-size: 10.417vw;
+            max-width: 690px;
+        }
+        /*DESKTOP*/
+        @media screen and (min-width: 1280px) {
+            font-size: 100px;
+        }
     }
     & .hero__text {
         color: $colorText1;
         font-family: $fontSec;
         font-weight: normal;
         font-size: 1rem;
-        margin-top: 10px;
-        margin-bottom: 45px;
+        /*margin-top: 10px;
+        margin-bottom: 45px;*/
     }
     & .hero__ball {
         height: 45px;
