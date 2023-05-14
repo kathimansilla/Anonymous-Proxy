@@ -71,18 +71,12 @@
 }
 
 .postSection2 {
-    display: grid;
-    grid-template-rows: 1fr, 1fr;
-
-    @media screen and (min-width: $tablet) {
-        grid-gap: 14px;
-    }
-
     &__title {
         font-family: $fontPpal;
         font-size: 1.125rem;
         font-weight: 800;
         line-height: 1.67;
+        margin-bottom: 14px;
 
         @media screen and (min-width: $tablet) {
             font-size: 1.5rem;
