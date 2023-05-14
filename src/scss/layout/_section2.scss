@@ -2,29 +2,38 @@
     background-color: #eff9ff;
     padding: $measure2 0 $measure4;
     text-align: center;
-    &__title {
+    
+    @media screen and (min-width: $desktop) {
+        padding-top: $measure4;
+    }
+    &__title1 {
         font-family: $fontPpal;
         font-size: 1.5rem;
         font-weight: 800;
         line-height: 1.25;
         margin-bottom: $measure3;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 1.625rem;
+            line-height: 1.73;
+        }
+        @media screen and (min-width: $desktop) {
+            font-size: 2rem;
+            line-height: 1.41;
+        }
     }
     &__articles {
         display: inline-grid;
         grid-template-rows: repeat(3, 1fr);
         grid-gap: $measure3;
-        & .postSection2__title {
-            font-family: $fontPpal;
-            font-size: 1.125rem;
-            font-weight: 800;
-            line-height: 1.67;
+
+        @media screen and (min-width: $tablet) {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 1fr;
+                grid-gap: 27.7px;
         }
-        & .postSection2__text {
-            font-family: $fontSec;
-            font-size: 1.125rem;
-            font-weight: 400;
-            line-height: 1.67;
-            width: 180px;
+        @media screen and (min-width: $desktop) {
+            grid-gap: 26.2px;
         }
     }
     &__button {
@@ -34,6 +43,15 @@
         border-radius: 22.5px;
         margin: $measure3 auto 0;
         display: grid;
+
+        @media screen and (min-width: $tablet) {
+            width: 210px;
+            margin: $measure4 auto 0;
+        }
+        @media screen and (min-width: $desktop) {
+            width: 255px;
+        }
+    }
         & .text2 {
             text-decoration: none;
         }
@@ -50,12 +68,42 @@
                 color: #304268;
             }
         }
+}
+
+.postSection2 {
+    display: grid;
+    grid-template-rows: 1fr, 1fr;
+
+    @media screen and (min-width: $tablet) {
+        grid-gap: 14px;
     }
-        @media screen and (min-width: 768px) {
-            &__articles {
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: 1fr;
-                grid-gap: 26.2px;
-            }
+
+    &__title {
+        font-family: $fontPpal;
+        font-size: 1.125rem;
+        font-weight: 800;
+        line-height: 1.67;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 1.5rem;
+            line-height: 1.25;
         }
+    }
+
+    &__text {
+        font-family: $fontSec;
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.67;
+        width: 180px;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 1.25rem;
+            line-height: 1.5;
+            width: 212.3px;
+        }
+        @media screen and (min-width: $desktop) {
+            width: 353.8px;
+        }
+    }
 }
