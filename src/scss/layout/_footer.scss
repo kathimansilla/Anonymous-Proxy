@@ -1,11 +1,11 @@
 .footer {
     background-color: #304268;
-    padding-bottom: 45px;
+    padding-bottom: $measure3;
 }
 .columnaCentral {
     & .footer__ball {
-            height: 45px;
-            width: 45px;
+            height: $measure3;
+            width: $measure3;
             background-color: $colorText1;
             border-radius: 50%;
             transform: translateY(-20px);
@@ -19,7 +19,7 @@
     & .footer__content {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: $measure2;
         &--menu {
            font-family: $fontSec; 
            font-size: 1rem;

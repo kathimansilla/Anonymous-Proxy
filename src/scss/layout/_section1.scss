@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: 30px;
-    margin-bottom: 45px;
+    margin-top: $measure2;
+    margin-bottom: $measure3;
     &--littleText {
         font-family: $fontSec;
         color: #8ccbea;
@@ -18,7 +18,7 @@
         line-height: 1.25;
         display: inline-flex;
         flex-wrap: wrap;
-        margin: 1px 0 15px;
+        margin: 1px 0 $measure1;
     }
     &--text {
         font-family: $fontSec;
@@ -30,10 +30,10 @@
     &--button {
         border: 2px solid $colorButton_Heart;
         border-radius: 22.5px;
-        height: 45px;
+        height: $measure3;
         width: 76px;
         display: flex;
-        margin: 30px 0 45px;
+        margin-top: $measure2;
         & .text {
             text-decoration: none;
             height: 100%;

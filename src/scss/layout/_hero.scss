@@ -8,8 +8,8 @@
     /*height: 100vh;*/
     /*Si le digo 100%vh al hero, esto no funciona en el caso de que el user reduzca la ventana a una posición con mucho width y poco height -o para pantallas con características similares a lo descripto como es el caso de mi laptop hp-. Le sugiero al cliente estas medidas de height que cumplen con los modelos de pantallas mobile(320x568), tablet(768x768) y desktop(1280x768) pedidas y además son funcionales en otras posibles pantallas que requiera el user*/
     height: 568px;
-    @media screen and (min-width: 768px) {
-        height: 768px;
+    @media screen and (min-width: $tablet) {
+        height: $tablet;
     }
 }
 .columnaCentral {
@@ -26,10 +26,10 @@
         width: min-content;
         text-align: center;
         line-height: 1.31;
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: $tablet) {
             font-size: 5rem;
         }
-        @media screen and (min-width: 1280px) {
+        @media screen and (min-width: $desktop) {
             font-size: 6.25rem;
         }
     }
@@ -40,18 +40,18 @@
         font-size: 1rem;
         margin-top: 10px;
         margin-bottom: $measure3;
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: $tablet) {
             font-size: 1.5rem;
             margin-top: 20px;
             margin-bottom: $measure2;
         }
-        @media screen and (min-width: 1280px) {
+        @media screen and (min-width: $desktop) {
             margin-top: 0;
         }
     }
     & .hero__ball {
-        height: 45px;
-        width: 45px;
+        height: $measure3;
+        width: $measure3;
         background-color: $colorText1;
         border-radius: 50%;
         & .heroArrowTag {

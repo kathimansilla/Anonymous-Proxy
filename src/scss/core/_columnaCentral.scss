@@ -1,13 +1,13 @@
 .columnaCentral {
-    margin: 0 15px;
+    margin: 0 $measure1;
 
     /*tablet*/
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         margin: 0 39px;
     }
 
     /*desktop*/
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $desktop) {
         margin: 0 275px;
     }
 }
