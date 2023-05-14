@@ -4,12 +4,24 @@
     justify-content: flex-start;
     margin-top: $measure2;
     margin-bottom: $measure3;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: $measure4;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-top: $measure4;
+    }
     &--littleText {
         font-family: $fontSec;
         color: #8ccbea;
         font-size: 0.875rem;
         font-weight: 500;
         line-height: 2.14;
+
+        @media screen and (min-width: $desktop) {
+            font-size: 1rem;
+            line-height: 1.88;
+        }
     }
     &--title {
         font-family: $fontPpal;
@@ -19,6 +31,15 @@
         display: inline-flex;
         flex-wrap: wrap;
         margin: 1px 0 $measure1;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 1.625rem;
+            line-height: 1.73;
+        }
+        @media screen and (min-width: $desktop) {
+            font-size: 2rem;
+            line-height: 1.41;
+        }
     }
     &--text {
         font-family: $fontSec;
@@ -26,6 +47,11 @@
         font-weight: 500;
         line-height: 1.67;
         color: #5f5e5e;
+
+        @media screen and (min-width: $tablet) {
+        font-size: 1.25rem;
+        line-height: 1.5;
+    }
     }
     &--button {
         border: 2px solid $colorButton_Heart;
@@ -34,6 +60,12 @@
         width: 76px;
         display: flex;
         margin-top: $measure2;
+        @media screen and (min-width: $tablet) {
+            width: 91px;
+        }
+        @media screen and (min-width: $desktop) {
+            width: 160px;
+        }
         & .text {
             text-decoration: none;
             height: 100%;
