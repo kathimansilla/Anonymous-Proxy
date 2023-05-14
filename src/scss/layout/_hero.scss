@@ -2,10 +2,15 @@
     background-image: url('../images/cover.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    /*height: 100vh;*/
+    /*Si le digo 100%vh al hero, esto no funciona en el caso de que el user reduzca la ventana a una posición con mucho width y poco height -o para pantallas con características similares a lo descripto como es el caso de mi laptop hp-. Le sugiero al cliente estas medidas de height que cumplen con los modelos de pantallas mobile(320x568), tablet(768x768) y desktop(1280x768) pedidas y además son funcionales en otras posibles pantallas que requiera el user*/
+    height: 568px;
+    @media screen and (min-width: 768px) {
+        height: 768px;
+    }
 }
 .columnaCentral {
     display: flex;
@@ -17,21 +22,15 @@
         color: $colorText1;
         font-family: $fontPpal;
         text-transform: uppercase;
-        /*usé una calculadora de px to vw para intentar hacer el texto responsive*/
-        font-size: 13.125vw;
+        font-size: 2.625rem;
         width: min-content;
-        max-width: 690px;
         text-align: center;
         line-height: 1.31;
-        /*TABLET*/
         @media screen and (min-width: 768px) {
-            font-size: 10.417vw;
+            font-size: 5rem;
         }
-        /*DESKTOP*/
-        /*Puse min-width: 950px para que no desborde el texto su contenedor. La pantalla Desktop es de 1280px*/
-        @media screen and (min-width: 950px) {
-            font-size: 100px;
-            max-width: 730px;
+        @media screen and (min-width: 1280px) {
+            font-size: 6.25rem;
         }
     }
     & .hero__text {
@@ -39,8 +38,16 @@
         font-family: $fontSec;
         font-weight: normal;
         font-size: 1rem;
-        /*margin-top: 10px;
-        margin-bottom: 45px;*/
+        margin-top: 10px;
+        margin-bottom: $measure3;
+        @media screen and (min-width: 768px) {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            margin-bottom: $measure2;
+        }
+        @media screen and (min-width: 1280px) {
+            margin-top: 0;
+        }
     }
     & .hero__ball {
         height: 45px;
