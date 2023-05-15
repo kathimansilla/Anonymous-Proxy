@@ -19,49 +19,46 @@
                 @media screen and (min-width: $tablet) {
                     transform: translateY(-67px);
                 }
-            }
+        }
 }
-.columnaCentral {
-    & .footerContent {
-        display: flex;
-        flex-direction: column;
+.footerContent {
+    display: flex;
+    flex-direction: column;
+    gap: $measure2;
+    text-align: center;
+    @media screen and (min-width: $tablet) {
+        flex-direction: row;
         gap: $measure2;
-        text-align: center;
-        @media screen and (min-width: $tablet) {
-            flex-direction: row;
-            gap: $measure2;
-            text-align: start;
-            width: 100%;
-            justify-content: center;
-            .footerContent__text {
-                width: 210px;
-                order: 1;
-            }
-            .footerContent__menu {
-                width: 210px;
-                order: 3;
-            }
-            @media screen and (min-width: $desktop) {
-                     width: 540px;
-            }
+        text-align: start;
+        width: 100%;
+        justify-content: center;
+        .footerContent__text {
+            width: 210px;
+            order: 1;
+        }
+        .footerContent__menu {
+            width: 210px;
+            order: 3;
+        }
+        @media screen and (min-width: $desktop) {
+            width: 540px;
+        }
     }
-        &__menu {
-           font-family: $fontSec; 
-           font-size: 1rem;
-           text-transform: uppercase;
-           line-height: 1.88;
-           & .tag__footer {
-            color: $colorText1;
-            text-decoration: none;
-           }
+    &__menu {
+        font-family: $fontSec; 
+        font-size: rem(16);
+        text-transform: uppercase;
+        line-height: 1.88;
+        & .tagFooter {
+        color: $colorText1;
+        text-decoration: none;
         }
-        &__text {
-            font-family: $fontSec;
-            color: $colorText1;
-            font-size: 0.875rem;
-            line-height: 2.14;
-        }
-        
+    }
+    &__text {
+        font-family: $fontSec;
+        color: $colorText1;
+        font-size: 0.875rem;
+        line-height: 2.14;
         & .heart {
             color: $colorButton_Heart;
         }
