@@ -2,11 +2,10 @@
     background-color: #304268;
     padding-top: $measure4;
     padding-bottom: $measure3;
-
     @media screen and (min-width: $tablet) {
         padding-top: $measure3;
     }
-        & .footer__ball {
+        &__ball {
             width: $measure3;
             height: $measure3;
             border-radius: 50%;
@@ -14,10 +13,9 @@
             position: absolute;
             transform: translateY(-82px);
             display: block;
-                & .footer__arrow {
+                &--arrow {
                     margin: 11px 12.4px 10px 12px;
                 }
-
                 @media screen and (min-width: $tablet) {
                     transform: translateY(-67px);
                 }
@@ -29,7 +27,6 @@
         flex-direction: column;
         gap: $measure2;
         text-align: center;
-
         @media screen and (min-width: $tablet) {
             flex-direction: row;
             gap: $measure2;
@@ -44,9 +41,9 @@
                 width: 210px;
                 order: 3;
             }
-                 @media screen and (min-width: $desktop) {
+            @media screen and (min-width: $desktop) {
                      width: 540px;
-        }
+            }
     }
         &__menu {
            font-family: $fontSec; 
