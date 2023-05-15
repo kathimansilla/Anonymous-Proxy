@@ -75,10 +75,12 @@
                 font-size: rem(20);
                 font-weight: 500;
                 color: $colorButton_Heart;
-                &:hover {
+            }  
+            &:hover {
+                .textButton {
                     color: #304268;
                 }
-            }   
+            }
         }
     }
 }
