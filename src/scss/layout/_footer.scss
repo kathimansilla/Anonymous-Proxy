@@ -1,45 +1,72 @@
 .footer {
     background-color: #304268;
+    padding-top: $measure4;
     padding-bottom: $measure3;
+
+    @media screen and (min-width: $tablet) {
+        padding-top: $measure3;
+    }
+        & .footer__ball {
+            width: $measure3;
+            height: $measure3;
+            border-radius: 50%;
+            background-color: $colorText1;
+            position: absolute;
+            transform: translateY(-82px);
+            display: block;
+                & .footer__arrow {
+                    margin: 11px 12.4px 10px 12px;
+                }
+
+                @media screen and (min-width: $tablet) {
+                    transform: translateY(-67px);
+                }
+            }
 }
 .columnaCentral {
-    & .footer__ball {
-            height: $measure3;
-            width: $measure3;
-            background-color: $colorText1;
-            border-radius: 50%;
-            transform: translateY(-20px);
-            & .footerArrowTag {
-                display: block;
-            }
-            & .footer__arrow {
-                margin: 11px 12.4px 10px 12px;
-            }
-        }
-    & .footer__content {
+    & .footerContent {
         display: flex;
         flex-direction: column;
         gap: $measure2;
-        &--menu {
+        text-align: center;
+
+        @media screen and (min-width: $tablet) {
+            flex-direction: row;
+            gap: $measure2;
+            text-align: start;
+            width: 100%;
+            justify-content: center;
+            .footerContent__text {
+                width: 210px;
+                order: 1;
+            }
+            .footerContent__menu {
+                width: 210px;
+                order: 3;
+            }
+                 @media screen and (min-width: $desktop) {
+                     width: 540px;
+        }
+    }
+        &__menu {
            font-family: $fontSec; 
            font-size: 1rem;
            text-transform: uppercase;
-           text-align: center;
            line-height: 1.88;
            & .tag__footer {
             color: $colorText1;
             text-decoration: none;
            }
         }
-    & .footer__content--text {
-        font-family: $fontSec;
-        color: $colorText1;
-        font-size: 0.875rem;
-        text-align: center;
-        line-height: 2.14;
+        &__text {
+            font-family: $fontSec;
+            color: $colorText1;
+            font-size: 0.875rem;
+            line-height: 2.14;
+        }
+        
         & .heart {
             color: $colorButton_Heart;
         }
-    }
     }
 }
