@@ -4,7 +4,6 @@
     justify-content: flex-start;
     margin-top: $measure2;
     margin-bottom: $measure3;
-
     @media screen and (min-width: $tablet) {
         margin-bottom: $measure4;
     }
@@ -14,44 +13,41 @@
     &__littleText {
         font-family: $fontSec;
         color: #8ccbea;
-        font-size: 0.875rem;
+        font-size: rem(14);
         font-weight: 500;
         line-height: 2.14;
-
         @media screen and (min-width: $desktop) {
-            font-size: 1rem;
+            font-size: rem(16);
             line-height: 1.88;
         }
     }
     &__title {
         font-family: $fontPpal;
-        font-size: 1.5rem;
+        font-size: rem(24);
         font-weight: 800;
         line-height: 1.25;
         display: inline-flex;
         flex-wrap: wrap;
         margin: 1px 0 $measure1;
-
         @media screen and (min-width: $tablet) {
-            font-size: 1.625rem;
+            font-size: rem(26);
             line-height: 1.73;
         }
         @media screen and (min-width: $desktop) {
-            font-size: 2rem;
+            font-size: rem(32);
             line-height: 1.41;
         }
     }
     &__text {
         font-family: $fontSec;
-        font-size: 1.125rem;
+        font-size: rem(18);
         font-weight: 500;
         line-height: 1.67;
         color: #5f5e5e;
-
         @media screen and (min-width: $tablet) {
-        font-size: 1.25rem;
+        font-size: rem(20);
         line-height: 1.5;
-    }
+        }
     }
     &__button {
         border: 2px solid $colorButton_Heart;
@@ -76,15 +72,13 @@
                 display: inline;
                 margin: auto;
                 font-family: $fontSec;
-                font-size: 1.25rem;
+                font-size: rem(20);
                 font-weight: 500;
                 color: $colorButton_Heart;
-            }
-        }
-        & .text:hover {
-            & .textButton {
-                color: #304268;
-            }
+                &:hover {
+                    color: #304268;
+                }
+            }   
         }
     }
 }
