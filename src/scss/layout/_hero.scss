@@ -6,7 +6,6 @@
     justify-content: center;
     align-items: flex-end;
     height: 100vh;
-    /*height: 568px;*/
     @media screen and (min-width: $tablet) {
         height: 100vh;
     }
@@ -14,7 +13,6 @@
 .columnaCentral {
     display: flex;
     flex-flow: column;
-    /*height: 50%;*/
     align-items: center;
     & .hero__title {
         color: $colorText1;
@@ -52,11 +50,18 @@
         width: $measure3;
         background-color: $colorText1;
         border-radius: 50%;
+        margin-bottom: 53px;
         &--tag {
             display: block;
         }
         &--arrow {
             margin: 18px 12px 15.3px 13px;
+        }
+        @media screen and (min-width: $tablet) {
+            margin-bottom: $measure3;
+        }
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 13px;
         }
     }
 }
