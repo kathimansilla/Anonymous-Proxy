@@ -2,8 +2,8 @@
 
 ## Tools: ⚒️
 
-- `HTML
--  SCSS`
+- `HTML`
+- `SCSS`
 - `Vs Code`
 - `GitHub`
 
